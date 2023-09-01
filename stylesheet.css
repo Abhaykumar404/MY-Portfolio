@@ -8,13 +8,11 @@
 
 body{
     color: #ededed;
-    background: #515050;;
+    background: #515050;
 }
 
 .header{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     padding: 20px 50px;
     background: transparent;
@@ -22,7 +20,7 @@ body{
     justify-content: space-between ;
     align-items: center;
     z-index: 100;
-    background:#717171;
+    background:#6d6c6c;
     box-shadow: 0 0 15px #0ef;
     height: 8vh;
 }
@@ -62,12 +60,15 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: #5e5e5e;
+    background:  #696767;;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding:70px 60px 0 ;
+    opacity: 0;
+    animation:slideright 1s ease forwards;
+    animation-delay: 0.4s;
 }
 
 .home-content{
@@ -131,25 +132,6 @@ body{
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
-}
-
-.home-img {
-    flex: 1;
-    padding-left: 20px;
-    display: flex;
-}
-
-.home-img img { 
-    border: 2px solid #0ef;
-    border-radius: 50%;
-    max-width: 50vw;
-    height: auto;
-    margin-left: 140px; /* Adjusted from margin-left */
-    opacity: 0;
-    animation: slideleft 1s ease forwards;
-    animation-delay: 0.5s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
 }
 
 
