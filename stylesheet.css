@@ -9,7 +9,48 @@
 body{
     color: #ededed;
     background: #515050;
+    /* overflow-x: scroll; */
 }
+
+/* Hide the navigation menu by default */
+.navbarshow {
+    display: none;
+  }
+.navbarshow a{
+    text-decoration: none;
+    color: white;
+  }
+.navbarshow div{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px ;
+    transition: 0.2s  ease-in-out;
+  }
+.navbarshow div:hover{
+   background: #576d6b;
+   padding: 5px;
+   border-radius: 5px;
+  }
+.navbarshow :last-child{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1px ;
+  }
+  
+  /* Apply your styles for the navigation menu when it's active */
+  .navbarshow.active {
+    border-radius:5px ;
+    margin-left: 10px;
+    display: block;
+    margin-top: 100%;
+    border: ipx solid rgba(0, 0, 0, 0.479);
+    padding: 15px;
+    width: 100px;
+   background-color: #081b29;
+   box-shadow: #081b29b9 0px 0px 1000px 1200px ;
+    /* Add your styles here for showing the navigation menu */
+  }
+  
 
 .header{
     position: fixed;
@@ -23,6 +64,14 @@ body{
     background:#6d6c6c;
     box-shadow: 0 0 15px #0ef;
     height: 8vh;
+}
+.btn{
+    display: none;
+    font-size:36px;
+}
+
+.btn span{
+    color: #0ef;
 }
 
 .logo{
@@ -38,8 +87,13 @@ body{
     
 }
 
+.navbar{
+    padding-left: 24%;
+}
+
+
 .navbar a{
-    display: inline-block;
+    display:inline-block;
     font-size: 25px;
     color: #fff;
     text-decoration: none;
@@ -51,6 +105,8 @@ body{
     animation-delay:calc(.2s *var(--i));
 }
 
+
+
 .navbar a:hover{
     color: #0ef;
 }
@@ -60,9 +116,7 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background:  #696767;;
-    background-size: cover;
-    background-position: center;
+    background:  #515050;
     display: flex;
     align-items: center;
     padding:70px 60px 0 ;
@@ -70,7 +124,18 @@ body{
     animation:slideright 1s ease forwards;
     animation-delay: 0.4s;
 }
-
+@media only screen and (min-width:1000px) {
+    .home{
+    background-image: url('Image/km.png') !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    .hideandshow{
+        display: none !important;
+        /* width: ; */
+    }
+}
 .home-content{
     max-width: 600px;
 }
@@ -252,6 +317,7 @@ body{
   line-height: 1.4;
   margin-bottom: 4rem;
 }
+
 .sub-title{
     align-items: center;
     font-size:60px;
@@ -355,10 +421,10 @@ section{
     color: #0ef;
 }
 
+
 .container1, .container2 {
     flex: 1;
     padding:10px; 
-   
 }
 
 
@@ -927,4 +993,141 @@ section{
         transform : translateY(0px);
         opacity: 1;
     }
+}
+
+
+/*This is the method to resolve the problem of respponsive nature of the site*/
+@media only screen and (max-width:1000px){
+    .container {
+        display: block;
+        /* border: 1px solid; */
+        height: auto;
+        max-width: 980px !important;
+        width: 100vw !important;
+        padding: 0px !important;
+    }
+    .container1 {
+        width: 100%;
+        display: block;
+        border: 2px solid transparent;
+        margin:10% 0px !important;
+        padding: 20px !important
+    }
+    .container1 .Head{
+        font-size: 60px;
+        margin-bottom: 10px !important;
+    }
+
+.btn{
+    display: block;
+    /* position: ; */
+    max-width: 50px !important;
+    /* height: 10px !important; */
+    background-color: transparent;
+    border: none;
+}
+.btn img{
+    width: 70px !important;
+    height:20px !important;
+}
+.navbar{
+    display: none;
+}
+    .container2{
+        width: 100vw;
+        height:auto !important;
+        padding: 0 20% !important;
+        margin-left: 0px !important;
+        margin-top: 0% !important;
+    
+    }
+
+    .heading1{
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness:5px;
+        margin-bottom: 10px !important;
+   }
+
+   .radial-bars{
+    width: auto !important;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between !important;
+}
+   .radial-bar{
+   margin-top: 5px !important;
+   
+}
+
+.row{
+    margin-bottom: 10px;
+}
+.row img{
+    width: 96% !important;
+    border-radius: 8px;
+    display: block;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.main-text {
+    padding-top: 13px !important;
+    margin-top: 20px;
+}
+.contact{
+    display: inline-block;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 20%;
+}
+
+.home {background-size: contain;
+background-repeat: no-repeat ;
+/* background-position: -10px -10px; */
+
+}
+#homebgimg{
+    background-image: none !important;
+    background-size: cover;
+}
+.hideandshow{
+    /* display: none !important; */
+    width: 100px;
+    height: 100px !important;
+}
+
+}
+@media only screen and (max-width:4500px){
+
+    .heading1{
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness:5px;
+        margin-bottom: 10px !important;
+   }
+
+   .radial-bars{
+    width: auto !important;
+    /* border: 2px solid; */
+    display: flex;
+    flex-wrap: nowrap !important;
+    flex-direction: column  !important;
+    justify-content: center !important;
+}
+.radial-bars .radial-bar {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 0px !important;
+    /* border: 1px solid red; */
+}
+
+
+
 }

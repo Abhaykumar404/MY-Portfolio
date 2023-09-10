@@ -19,8 +19,23 @@
         <a href="#project" style="--i:5">Projects</a>
         <a href="#contact" style="--i:6">Contact</a>
      </nav>
+     <div style="display: flex;">
+      <button class="btn" id="toggleButton">
+         <span><i class='bx bx-menu'></i></span>
+       </button>
+       <nav class="navbarshow" id="navMenu">
+         <div><a href="#" style="--i:1" class="active">Home</a></div>
+         <div><a href="#services" style="--i:3">Services</a></div>
+         <div><a href="#skills" style="--i:4">Skill</a></div>
+         <div><a href="#project" style="--i:5">Projects</a></div>
+         <div><a href="#contact" style="--i:6">Contact</a></div>
+       </nav>
+   </div>
+
    </header>
-   <section class="home" style="background-image: url(Image/km.png);">
+   <section class="home" id=" homebgimg">
+      <div class="col">
+         <img src="Image/gm.png" class="hideandshow"/>
     <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Abhay Kumar</h1>
@@ -36,6 +51,7 @@
     <a href="#about" class="btn-box">More About Me</a>
 </div>
 <span class="home-imgHover"></span>
+</div>
    </section>
    
    <section class="About" id="about">
@@ -80,9 +96,10 @@
                </div>
                <div>
                   <i class='bx bx-crop' style='color:#00eeff'></i>
-                  <h2>UI/UX Design</h2>
+                  <h2>UI/UX Designer</h2>
                   <p>
-                     I am a skilled UI who possesses a passion.</p>
+                     Design visually appealing user interfaces that enhance 
+                     the user experience (UX) and usability of websites and applications.</p>
                      <a href="#" class="read">learn more</a>
                </div>
             </div>
@@ -198,7 +215,7 @@
                <div class="layer">
                   <h5>YouTube Clone</h5>
                   <p>"Experience the ultimate video sharing platform with our React.js-powered YouTube clone."</p>
-                  <a href="#"><i class='bx bx-link-external' style='color:#00eeff'  ></i></a>
+                  <a href="https://github.com/anirudhkala110/YouTube_Clone_Simple_App.git"><i class='bx bx-link-external' style='color:#00eeff'  ></i></a>
                </div>
             </div>
             <div class="row">
